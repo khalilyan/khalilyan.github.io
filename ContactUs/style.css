@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    border: border-box;
+    padding: 0;
+}
+:root{
+    --green: #178a1f;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    transition: .4s ease-in-out;
+}
+a:hover{
+    opacity: 0.8;
+}
+
+.active{
+    opacity: 0.5;
+}
+#mobileMenuIcon{
+    display: none;
+}
+.mobileMenu{
+    display: none;
+}
+
+.ContactUsContain{
+    width: 100%;
+    height: 1333px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#mobileMenuIcon{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 6.6%;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+}
+
+.headerContent{
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
+
+.pagesList{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.pagesList li{
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    color: #000000;
+}
+
+.headerContent>h2 {
+    font-family: "Open Sans";
+    font-weight: 900;
+    font-size: 20px;
+    font-style: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 68%;
+}
+.textContain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+}
+
+.textContain :first-child {
+    font-family: "Open Sans";
+    font-size: 52px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+.textContain :nth-child(3)  {
+    font-family: "Open Sans";
+    font-size: 35px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #101010;
+}
+
+hr{
+    width: 10%;
+    border-color: #178a1f;
+    position: relative;
+    border-width: 1px;
+    border-style: solid; 
+}
+
+.ContactForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.ContactForm input{
+    height: 50px;
+    opacity: 0.30;
+    border-color: #707070;
+    border-width: 2px;
+    padding-left: 5px;
+    border-style: solid;
+    background: #ffffff;
+    
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    color: #d3d3d3;
+
+    
+}
+.ContactForm :last-child{
+    cursor: pointer;
+    width: 271px;
+    height: 50px;
+    opacity: 1;
+    border-color: #178a1f;
+    border-width: 3px;
+    border-style: solid;
+    background: #178a1f;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+    transition: .5s ease-in-out;
+}
+
+.ContactForm :last-child:hover {
+    box-shadow: 0px 1px 5px var(--green);
+    opacity: .9;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    opacity: 0.30;
+    border-color: #707070;
+    border-width: 2px;
+    border-style: solid;
+    background: #ffffff;
+    padding-left: 5px;
+    resize: none;
+
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    color: #d3d3d3;
+}
+
+
+
+footer {
+    width: 80%;
+    height: 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuItems{
+    list-style-type: none;    
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+}
+#footerTitle {        
+    font-family: "Open Sans";
+    font-size: 23px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+.ScoSites{    
+    display: flex;
+    width: 20%;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.ScoSites svg {
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.ScoSites svg:hover{
+    filter: drop-shadow(0px 0px 2px var(--green));
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1650px){    
+    .headerContent{
+        width: 50%;
+    }
+    .ScoSites{
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 1151px){        
+    .headerContent{
+        width: 65%;
+    }
+}
+
+@media (max-width: 951px){        
+    .headerContent{
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 769px){
+    .ContactUsContain{
+        height: 1147px;
+    }
+    header{
+        height: 10.2%;
+    }
+
+    .headerContent{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .main{
+       height: 64%;
+       width: 100%;
+    }
+    
+    .textContain{
+        width: 68.7%;
+    }
+    .textContain :first-child {
+        font-size: 32px;
+    }
+    hr{
+        width: 19%;
+    }
+
+    .textContain :nth-child(3) {
+        font-size: 18px;
+    }
+    
+    .ContactForm{
+        width: 82%;
+    }
+
+    .ScoSites{
+        width: 40%;
+    }
+    #footerTitle , .menuItems li{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 571px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4.5%;
+    }
+    .pagesList{
+        display: none;
+        visibility: hidden;
+    }
+    #mobileMenuIcon{
+        display: block;
+    }
+    .headerContent{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .ScoSites{
+        width: 60%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .headerContent{
+        width: 91.2%;
+    }
+    .mobileMenu{
+        width: 91.2%;
+        display: flex;
+        flex-direction: column;
+        height: 133px;
+        display: none;
+        list-style-type: none;
+        flex: .7;
+        justify-content: space-between;
+    }
+    .mobileMenu li{
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-style: normal;
+        text-align: left;
+        font-size: 20px;
+        color: #000000;
+    }
+}
+
+@media (max-width: 376px){
+    .ContactUsContain{
+        height: 1236px;
+    }
+    .pagesList{
+        display: none;
+        visibility: hidden;
+    }
+    #mobileMenuIcon{
+        display: block;
+    }
+    .headerContent{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        justify-content: space-between;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .headerContent{
+        width: 91.2%;
+    }
+    .mobileMenu{
+        width: 91.2%;
+        display: flex;
+        flex-direction: column;
+        height: 133px;
+        display: none;
+        list-style-type: none;
+        flex: .7;
+        justify-content: space-between;
+    }
+    .mobileMenu li{
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-style: normal;
+        text-align: left;
+        font-size: 20px;
+        color: #000000;
+    }
+    
+    .main{
+      height: 67.15%; 
+    }
+    .textContain{
+        width: 87.5%;
+        height: 31%;
+        justify-content: space-between;
+    }
+    .textContain :first-child{
+        font-size: 36px;
+    }
+    .textContain :nth-child(3){
+        font-size: 21px;
+    }
+    .ContactForm{
+        align-items: center;
+        width: 87.1%;
+        height: 47.7%;
+    }
+    .ContactForm input {
+        width: 100%;
+        height: 12%;
+    }
+    .ContactForm textarea {
+        width: 100%;
+        height: 25%;
+    }
+    .ContactForm :last-child {
+        width: 100%;
+        height: 13.5%;
+    }
+    hr{
+        width: 100px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .ScoSites{
+        width: 100%;
+    }
+    #footerTitle{
+        font-size: 15px;
+    }
+}
